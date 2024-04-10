@@ -8,7 +8,8 @@ export default () => {
     /**
      * Setting up Mongoose
      */
-    mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_DATABASE}.${process.env.MONGO_TOKEN}.mongodb.net/?retryWrites=true&w=majority`)
-        .then(() => console.info("MongoDB Connected"))
+    mongoose.connect(
+      "mongodb+srv://cld112345689:cld2986707@inclassproject.ryiqryz.mongodb.net/?retryWrites=true&w=majority&appName=inclassproject"
+      ).then(() => console.info("MongoDB Connected"))
         .catch(error => console.error(error));
 };

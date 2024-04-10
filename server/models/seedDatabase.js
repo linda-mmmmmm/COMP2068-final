@@ -1,10 +1,7 @@
-import MongooseSetup from "./lib/MongooseSetup.js";
 import dotenv from "dotenv";
-import Level from "./Monster.js";
+import Monster from "./Monster.js";
 
 dotenv.config();
-
-MongooseSetup();
 
 const seedLevels = async () => {
   const levelsData = [
